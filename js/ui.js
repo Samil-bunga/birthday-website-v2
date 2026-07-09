@@ -52,6 +52,7 @@ function showLoveLetter() {
         startTyping();
 
     }
+}
 
 /*
 ==================================
