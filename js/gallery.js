@@ -163,7 +163,31 @@ function showGallery(){
     loadPhoto();
 
 }
+function showEnding(){
 
+    gallerySection.classList.add("hidden");
+
+    ending.classList.remove("hidden");
+
+    endingTitle.textContent = "Happy Birthday My Lovely Princess ❤️";
+
+    endingMessage.innerHTML = `Before this day ends...
+
+I just want you to know...
+
+Thank you for every smile.
+Thank you for every laugh.
+Thank you for being part of my life.
+
+No matter where life takes us...
+
+I will always choose you.
+
+Happy Birthday.
+
+I Love You Forever ❤️`;
+
+}
 nextGalleryBtn.addEventListener("click",showGallery);
 
 nextPhoto.addEventListener("click",()=>{
@@ -172,7 +196,9 @@ nextPhoto.addEventListener("click",()=>{
 
     if(currentPhoto>=memories.length){
 
-        currentPhoto=0;
+        showEnding();
+
+        return;
 
     }
 
@@ -189,6 +215,17 @@ prevPhoto.addEventListener("click",()=>{
         currentPhoto=memories.length-1;
 
     }
+
+    loadPhoto();
+
+});
+restartBtn.addEventListener("click",()=>{
+
+    currentPhoto = 0;
+
+    ending.classList.add("hidden");
+
+    gallerySection.classList.remove("hidden");
 
     loadPhoto();
 
