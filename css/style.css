@@ -746,3 +746,40 @@ opacity:0;
     box-shadow:0 0 12px rgba(255,255,255,.7);
 
 }
+#gallery-image{
+
+    transition:.4s ease;
+
+}
+
+#gallery-caption{
+
+    transition:.3s ease;
+
+}
+
+.gallery-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.3);
+
+    display:inline-block;
+
+    margin:0 4px;
+
+    transition:.3s;
+
+}
+
+.gallery-dot.active{
+
+    background:white;
+
+    transform:scale(1.3);
+
+}
