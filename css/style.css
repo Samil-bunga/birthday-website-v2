@@ -711,3 +711,38 @@ opacity:0;
     background:rgba(255,255,255,.25);
 
 }
+/* Gallery Indicator */
+
+#gallery-dots{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+}
+
+.gallery-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.35);
+
+    transition:.35s;
+
+}
+
+.gallery-dot.active{
+
+    background:white;
+
+    transform:scale(1.4);
+
+    box-shadow:0 0 12px rgba(255,255,255,.7);
+
+}
