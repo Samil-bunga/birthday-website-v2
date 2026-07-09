@@ -14,9 +14,9 @@ const CONFIG = {
     // Informasi Website
     // =============================
 
-    title: "Happy Birthday 🎂",
+    title: "Happy Birthday My Lovely Princess 🎂",
 
-    recipient: "Nama Orang",
+    recipient: "Aulia Nurmayanti",
 
     subtitle: "A Special Gift Made With ❤️",
 
@@ -26,17 +26,17 @@ const CONFIG = {
 
     message: `
 
-Selamat ulang tahun.
+Selamat ulang tahun sayangkuu cintakuu.
 
-Semoga semua impianmu satu per satu menjadi kenyataan.
+Semoga semua impianmu satu per satu menjadi kenyataan, aamiinn.
 
-Terima kasih sudah menjadi seseorang yang begitu berarti.
+Terima kasih sudah menjadi seseorang yang begitu berarti dlm hidup aku.
 
-Semoga hari ini dipenuhi kebahagiaan.
+Semoga hari ini dipenuhi kebahagiaan, keceriaan, dan segala hal baik lainnya.
 
 Dan semoga senyummu tidak pernah hilang.
 
-Happy Birthday ❤️
+Happy Birthday My Lovely Princess ❤️
 
 `,
 
