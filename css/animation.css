@@ -1,34 +1,125 @@
-/* =====================================
-   Aurora Background
-===================================== */
+/* ==============================
+   Aurora Engine v2
+============================== */
 
 #background{
-    background: linear-gradient(
-        -45deg,
-        #0f172a,
-        #312e81,
-        #4c1d95,
-        #7e22ce,
-        #111827
-    );
 
-    background-size:400% 400%;
+    position:fixed;
 
-    animation: auroraMove 12s ease infinite;
+    inset:0;
+
+    overflow:hidden;
+
+    background:#050505;
+
+    z-index:-5;
+
 }
 
-@keyframes auroraMove{
+/* Aurora Layer */
 
-    0%{
-        background-position:0% 50%;
-    }
+.aurora{
 
-    50%{
-        background-position:100% 50%;
-    }
+    position:absolute;
 
-    100%{
-        background-position:0% 50%;
-    }
+    width:70vw;
+
+    height:70vw;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.55;
+
+}
+
+/* Blue */
+
+.aurora-1{
+
+    background:#4f7cff;
+
+    left:-15%;
+
+    top:-10%;
+
+    animation:moveOne 18s infinite alternate ease-in-out;
+
+}
+
+/* Purple */
+
+.aurora-2{
+
+    background:#a855f7;
+
+    right:-15%;
+
+    top:20%;
+
+    animation:moveTwo 22s infinite alternate ease-in-out;
+
+}
+
+/* Pink */
+
+.aurora-3{
+
+    background:#ff4fa5;
+
+    left:20%;
+
+    bottom:-15%;
+
+    animation:moveThree 26s infinite alternate ease-in-out;
+
+}
+
+@keyframes moveOne{
+
+0%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+100%{
+
+transform:translate(180px,120px) scale(1.4);
+
+}
+
+}
+
+@keyframes moveTwo{
+
+0%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+100%{
+
+transform:translate(-180px,160px) scale(1.3);
+
+}
+
+}
+
+@keyframes moveThree{
+
+0%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+100%{
+
+transform:translate(100px,-180px) scale(1.35);
+
+}
 
 }
