@@ -30,22 +30,11 @@ body{
 /* Background */
 
 #background{
-
     position:fixed;
-
     inset:0;
-
-    background:
-
-    radial-gradient(circle at top,
-
-    #472e83,
-
-    #111827 45%,
-
-    #050505 100%);
-
+    overflow:hidden;
     z-index:-10;
+}
 
 }
 
