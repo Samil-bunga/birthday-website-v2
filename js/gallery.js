@@ -128,6 +128,11 @@ const galleryCaption = document.getElementById("gallery-caption");
 
 const prevPhoto = document.getElementById("prevPhoto");
 const nextPhoto = document.getElementById("nextPhoto");
+// Ending Elements
+const ending = document.getElementById("ending");
+const endingTitle = document.getElementById("ending-title");
+const endingMessage = document.getElementById("ending-message");
+const restartBtn = document.getElementById("restartBtn");
 
 let currentPhoto = 0;
 
