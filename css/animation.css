@@ -1,1 +1,30 @@
+/* ==========================================
+   Aurora Background Animation
+========================================== */
 
+@keyframes auroraMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#background {
+    background: linear-gradient(
+        -45deg,
+        #0f172a,
+        #312e81,
+        #4c1d95,
+        #7e22ce,
+        #111827
+    );
+
+    background-size: 400% 400%;
+
+    animation: auroraMove 18s ease infinite;
+}
