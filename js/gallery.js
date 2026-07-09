@@ -128,6 +128,7 @@ const galleryCaption = document.getElementById("gallery-caption");
 
 const prevPhoto = document.getElementById("prevPhoto");
 const nextPhoto = document.getElementById("nextPhoto");
+const galleryDots = document.getElementById("gallery-dots");
 // Ending Elements
 const ending = document.getElementById("ending");
 const endingTitle = document.getElementById("ending-title");
@@ -149,7 +150,7 @@ function loadPhoto(){
 
         galleryImage.style.opacity = 1;
         galleryCaption.style.opacity = 1;
-
+        updateDots();
     },250);
 
 }
@@ -159,6 +160,8 @@ function showGallery(){
     document.getElementById("love-letter").classList.add("hidden");
 
     gallerySection.classList.remove("hidden");
+
+    createDots();
 
     loadPhoto();
 
@@ -226,7 +229,65 @@ restartBtn.addEventListener("click",()=>{
     ending.classList.add("hidden");
 
     gallerySection.classList.remove("hidden");
-
+    createDots();
     loadPhoto();
+
+});
+function createDots(){
+
+    galleryDots.innerHTML="";
+
+    memories.forEach((_,index)=>{
+
+        const dot=document.createElement("span");
+
+        dot.className="gallery-dot";
+
+        if(index===currentPhoto){
+
+            dot.classList.add("active");
+
+        }
+
+        galleryDots.appendChild(dot);
+
+    });
+
+}
+
+function updateDots(){
+
+    const dots=document.querySelectorAll(".gallery-dot");
+
+    dots.forEach((dot,index)=>{
+
+        dot.classList.toggle("active",index===currentPhoto);
+
+    });
+
+}
+let touchStartX=0;
+
+gallerySection.addEventListener("touchstart",(e)=>{
+
+    touchStartX=e.touches[0].clientX;
+
+});
+
+gallerySection.addEventListener("touchend",(e)=>{
+
+    const touchEndX=e.changedTouches[0].clientX;
+
+    if(touchStartX-touchEndX>50){
+
+        nextPhoto.click();
+
+    }
+
+    if(touchEndX-touchStartX>50){
+
+        prevPhoto.click();
+
+    }
 
 });
