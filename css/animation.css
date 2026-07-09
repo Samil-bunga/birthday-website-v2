@@ -16,18 +16,17 @@
 
     position:absolute;
 
-    width:70vw;
+    width:120vw;
 
-    height:70vw;
+    height:120vw;
 
     border-radius:50%;
 
-    filter:blur(120px);
+    filter:blur(80px);
 
-    opacity:.55;
+    opacity:.75;
 
 }
-
 /* Blue */
 
 .aurora-1{
