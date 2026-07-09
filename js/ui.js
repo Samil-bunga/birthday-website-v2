@@ -53,21 +53,6 @@ function showLoveLetter() {
 
     }
 
-}
-/*
-==================================
-Show Gallery
-==================================
-*/
-
-function showGallery() {
-
-    loveLetter.classList.add("hidden");
-
-    memoryGallery.classList.remove("hidden");
-
-}
-
 /*
 ==================================
 Setup UI
