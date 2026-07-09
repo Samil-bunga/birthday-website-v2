@@ -141,7 +141,7 @@ function loadPhoto(){
 
     galleryImage.style.opacity = 0;
     galleryCaption.style.opacity = 0;
-
+    galleryImage.style.transform="scale(.95)";
     setTimeout(()=>{
 
         galleryImage.src = memories[currentPhoto].image;
@@ -150,7 +150,8 @@ function loadPhoto(){
 
         galleryImage.style.opacity = 1;
         galleryCaption.style.opacity = 1;
-        updateDots();
+        galleryImage.style.transform="scale(1)";
+       updateDots();
     },250);
 
 }
