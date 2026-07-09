@@ -170,14 +170,33 @@ body{
 
 #story{
     position:absolute;
+
     left:50%;
     top:50%;
+
     transform:translate(-50%,-50%);
+
+    width:90%;
+    max-width:520px;
+
+    padding:40px;
+
     text-align:center;
 
-    background:rgba(0,0,0,.35);
-    padding:20px;
-    border-radius:20px;
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.35),
+        0 0 35px rgba(168,85,247,.18);
+
+    animation:fadeUp .9s ease;
 }
 
 #title{
@@ -201,3 +220,20 @@ body{
     line-height:1.9;
 
       }
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translate(-50%,calc(-50% + 40px));
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translate(-50%,-50%);
+
+    }
+
+}
