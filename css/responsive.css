@@ -1,1 +1,16 @@
+@media (max-width:768px){
 
+    #title{
+        font-size:42px;
+    }
+
+    .loading-card{
+        width:92%;
+        padding:30px;
+    }
+
+    #message{
+        font-size:15px;
+    }
+
+}
