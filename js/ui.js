@@ -47,8 +47,13 @@ function showLoveLetter() {
 
     loveLetter.classList.remove("hidden");
 
-}
+    if (typeof startTyping === "function") {
 
+        startTyping();
+
+    }
+
+}
 /*
 ==================================
 Show Gallery
