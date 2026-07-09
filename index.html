@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Aurora Birthday Website</title>
+
+    <meta name="description"
+          content="Interactive Birthday Website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
 
+    <!-- Background -->
+    <div id="background"></div>
+
+    <!-- Loading Screen -->
+    <section id="loading-screen">
+
+        <div class="loading-card">
+
+            <h1 id="loading-title">
+                Happy Birthday 🎂
+            </h1>
+
+            <p id="loading-subtitle">
+                A Special Gift Made With ❤️
+            </p>
+
+            <button id="startButton">
+
+                START
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Main Website -->
+    <main id="app">
+
+        <!-- Aurora Layer -->
+        <div id="aurora"></div>
+
+        <!-- Floating Particle -->
+        <div id="particles"></div>
+
+        <!-- Floating Gallery -->
+        <div id="gallery"></div>
+
+        <!-- Story -->
+        <section id="story">
+
+            <h1 id="title"></h1>
+
+            <p id="subtitle"></p>
+
+            <div id="message"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Music -->
+    <audio
+        id="birthdayMusic"
+        preload="auto"
+        loop>
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
+
 </html>
